@@ -1,0 +1,10 @@
+from datetime import date
+year = int(input('Enter the year: '))
+month = int(input('Enter the month: '))
+birth_day = int(input('Enter the day: '))
+today = date.today()
+if(today.month, today.day) < (month,birth_day):
+    age = today.year - year - 1
+else:
+    age = today.year - year
+print(age,"years")
